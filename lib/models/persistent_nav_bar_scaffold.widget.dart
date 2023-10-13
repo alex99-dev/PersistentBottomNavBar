@@ -440,9 +440,8 @@ class _TabSwitchingViewState extends State<_TabSwitchingView>
                               ? AnimatedBuilder(
                                   animation: _animations[index]!,
                                   builder: (final context, final child) =>
-                                      Transform.translate(
-                                    offset:
-                                         Offset.zero,
+                                      Transform.rotate(
+                                    angle.zero
                                     child: widget.tabBuilder(context, index),
                                   ),
                                 )
